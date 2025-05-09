@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: twilio-sms-api
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    autoDeploy: true
+    branch: main
+    envVars:
+      - key: TWILIO_SID
+        value: ton_sid_twilio
+      - key: TWILIO_TOKEN
+        value: ton_token_twilio
+      - key: TWILIO_FROM
+        value: ton_numero_twilio
